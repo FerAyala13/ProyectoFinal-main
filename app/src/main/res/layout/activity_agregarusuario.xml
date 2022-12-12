@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/purple_200"
+tools:context=".Agregarusuario">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-19dp"
+        android:layout_marginEnd="17dp"
+        android:layout_weight="1"
+        android:background="@drawable/registraruser" />
+
+    <TextView
+    android:id="@+id/textView14"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_vertical|center"
+    android:text="AGREGAR USUARIO"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:textStyle="bold|italic" />
+
+
+    <LinearLayout
+        android:layout_width="397dp"
+        android:layout_height="246dp"
+        android:layout_above="@+id/btnagregarusuario"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="213dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="107dp"
+            android:layout_height="450dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombres"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical|center"
+                android:text="NOMBRES"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider76"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical|center"
+                android:text="APELLIDOS:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider35"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/usuario"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical|center"
+                android:text="USUARIO"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pswd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="fill_vertical|center"
+                android:text="CONTRASEÑA"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider23"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?android:attr/listDivider" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="281dp"
+            android:layout_height="450dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etnombres"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10" />
+
+            <View
+                android:id="@+id/divider99"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="8" />
+
+            <View
+                android:id="@+id/divider55"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:id="@+id/etusuario"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:maxEms="8" />
+
+            <View
+                android:id="@+id/divider20"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:id="@+id/etcontraseña"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnagregarusuario"
+        android:layout_width="161dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="AGREGAR"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+</RelativeLayout>
